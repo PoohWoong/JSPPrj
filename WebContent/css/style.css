@@ -1,0 +1,198 @@
+@CHARSET "UTF-8";
+
+.hidden{
+	display: none;
+}
+
+.button{
+	border:none;
+	border-left: 1px solid #8cba34;
+	text-indent: -999px;
+	overflow: hidden;
+	vertical-align: middle;	
+	display: inline-block;
+}
+
+#logo{
+	display: inline-block;
+	position: absolute;
+	left: 0px;
+	top: 23px;
+}
+
+ #main-menu{
+ 	 display:inline-block;
+ 	 position: absolute;
+ 	 left: 200px;
+ 	 top:27px;
+} 
+
+#main-menu>ul {
+	overflow: auto;
+}
+
+	#main-menu>ul>li {
+		float: left;
+		padding-left: 24px;
+		background: url("/JSPPrj/images/bg-main-menu-vsp.png") no-repeat 13px
+			center;
+	}
+	#main-menu>ul>li:first-child {
+		padding-left: 0px;
+		background: none;
+	}
+
+		#main-menu>ul>li>a {
+			font-family: "맑은고딕", "고딕", sans-serif;
+			font-size: 15px;
+			font-weight: bold;
+			color: #000;
+			
+			text-decoration: none;
+		}
+		
+		#main-menu>ul>li>a:hover{
+			color:#ff6a00;
+		}
+		
+		
+/*----------------#member-menu -------------------*/
+#member-menu{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 20px;
+	font-size: 0px;
+}		
+#member-menu>ul {
+	display: inline-block;
+	overflow: auto;
+}
+	#member-menu>ul>li{
+		float: left;
+		padding-left: 9px;
+		background: url("/JSPPrj/images/bg-joinus-menu-vsp.png") no-repeat 4px center;
+	}
+		#member-menu>ul>li:first-child{
+			padding-left: 0px;
+			background: none;
+		}
+		
+		#member-menu>ul>li>a{
+			font-family: "맑은고딕", "고딕", sans-serif;
+			font-size: 10px;
+			font-weight: bold;
+			color:#979797;			
+			text-decoration: none;
+		}
+/*--------------------------------------------------------------*/
+#lecture-search{
+	width: 308px;
+	height: 25px;
+	border: 5px solid #8cba34;
+	font-size: 0px;
+	display: inline-block;
+	position: absolute;
+	left: 468px;
+	top: 21px;
+}
+
+
+#lecture-search fieldset label{
+	
+	font-size: 11px;
+	font-weight: bold;
+	font-family: "맑은고딕", "고딕", sans-serif;
+	height:25px;
+	width:55px;
+	text-align:center;
+	display:inline-block;
+	vertical-align: middle;
+	line-height: 25px;
+}
+#lecture-search fieldset > input[type="text"]{
+	height:25px;
+	width: calc(100% - 86px);
+	border:none;
+	vertical-align: middle;
+	font-size: 16px;
+	text-indent: 5px;	
+}
+#lecture-search fieldset > input[type="submit"]{
+	width: 31px;
+	height: 25px;
+	border: none;
+	border-left: 1px solid #8cba34;
+	background: blue;
+	background: url("/JSPPrj/images/btn-zoom.png") no-repeat center;
+	text-indent: -999px;
+	vertical-align: middle;
+	float:right;
+}
+
+
+/*----------------#customer-menu style-----------------------*/
+#customer-menu{
+	display: inline-block;
+	position: absolute;
+	right:0px;
+	top:40px;
+	font-size: 0px;
+}
+#customer-menu li{
+	float: left;
+}
+#customer-menu li:FIRST-CHILD a{
+	background: url("/JSPPrj/images/txt-mypage.png") no-repeat center;
+	
+	width:71px;
+	height: 17px;
+}
+#customer-menu li:last-child a{
+	background: url("/JSPPrj/images/txt-customer.png") no-repeat center;
+	
+	width:71px;
+	height: 17px;
+}
+
+/********* aside *****************************/
+#aside >h1{
+	font-family: "맑은 고딕", "고딕", sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 40px;
+	padding-bottom: 50px;}
+
+#aside-menu ul{
+   padding-bottom: 10px;
+}
+
+#aside-menu li{
+   background: url("../images/bg-aside-menu-hsp.png") no-repeat center bottom;
+   height: 26px;
+}
+
+   #aside-menu li a {
+      color: #808080;
+      font-family: "맑은 고딕", "고딕", sans-serif;
+      font-size: 11px;
+      font-weight: bold;
+      text-decoration: none;
+      padding-left: 26px;
+   }
+
+   #aside-menu li a:hover {
+		background: url("../images/icon-current.png") no-repeat 12px center;
+   }
+
+
+
+ .clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	line-height: 0px;
+	height: 0px;
+	visibility: hidden;
+} 
